@@ -1,4 +1,8 @@
-# rest-client
+# REST Client
+
+This is a simple REST client built with [Tauri](https://tauri.app) and [Vite](https://vitejs.dev).
+
+## Getting Started
 
 To install dependencies:
 
@@ -9,7 +13,5 @@ bun install
 To run:
 
 ```bash
-bun run index.ts
+bun run dev
 ```
-
-This project was created using `bun init` in bun v1.2.2. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
