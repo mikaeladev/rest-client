@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json.schemastore.org/prettierrc",
+  "semi": false,
+  "endOfLine": "lf",
+  "proseWrap": "always",
+  "plugins": [
+    "@ianvs/prettier-plugin-sort-imports",
+    "prettier-plugin-tailwindcss",
+    "prettier-plugin-packagejson"
+  ],
+  "tailwindAttributes": ["class", "className", "tw"],
+  "tailwindFunctions": ["clsx", "cn", "cva", "tw"],
+  "importOrder": [
+    "^(bun/(.*)$)|^(bun$)",
+    "<BUILTIN_MODULES>",
+    "",
+    "^(vite/(.*)$)|^(vite$)",
+    "^(react/(.*)$)|^(react$)",
+    "^(react-dom/(.*)$)|^(react-dom$)",
+    "",
+    "<THIRD_PARTY_MODULES>",
+    "",
+    "^~/components/(.*)$",
+    "",
+    "^~/hooks/(.*)$",
+    "",
+    "^~/config/(.*)$",
+    "",
+    "^~/lib/(.*)$",
+    "",
+    "^~/styles/(.*)$",
+    "",
+    "^[~/]",
+    "^[.]",
+    "",
+    "<TYPES>"
+  ],
+  "packageSortOrder": [
+    "private",
+    "name",
+    "version",
+    "type",
+    "prettier",
+    "scripts",
+    "exports",
+    "dependencies",
+    "devDependencies",
+    "peerDependencies",
+    "trustedDependencies",
+    "workspaces"
+  ]
+}
