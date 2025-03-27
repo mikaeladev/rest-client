@@ -8,13 +8,13 @@ const PORT = 7378
 const { TAURI_DEV_HOST, TAURI_ENV_PLATFORM, TAURI_ENV_DEBUG } = process.env
 
 export default defineConfig({
-  root: "src/vite",
-  publicDir: "../../public",
+  root: "src/vite/app",
+  publicDir: "../../../public",
   envPrefix: ["VITE_", "TAURI_ENV_*"],
   clearScreen: false,
   plugins: [viteReact(), viteTailwindcss(), viteTsconfigPaths()],
   build: {
-    outDir: "../dist",
+    outDir: "../../../dist",
     emptyOutDir: true,
     target: TAURI_ENV_PLATFORM === "windows" ? "chrome105" : "safari13",
     minify: !TAURI_ENV_DEBUG ? "esbuild" : false,

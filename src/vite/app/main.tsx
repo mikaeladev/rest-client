@@ -3,7 +3,7 @@ import "~/styles/globals.css"
 import { StrictMode } from "react"
 import { createRoot } from "react-dom/client"
 
-import App from "~/app"
+import App from "~/app/page"
 
 const root = document.getElementById("root")
 if (!root) throw new Error("No root element found")
