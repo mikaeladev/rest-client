@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "tw-animate-css";
 
 @theme {
   --color-background: oklch(18.22% 0 0);
@@ -15,4 +16,14 @@
   --color-muted-background: oklch(15.91% 0 0);
   --color-muted-foreground: oklch(80.47% 0 0);
   --color-muted-border: oklch(28.5% 0 0);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
 }
